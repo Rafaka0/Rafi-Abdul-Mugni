@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main ()
+{ 
+	
+	float a,b,hasil;
+	char matematika;
+	cout<<"Selamat datang dalam penggunaan kalkulator\n\n";
+	
+
+	cout<<"Masukkan nilai ";
+	cin >> a;
+	cout<<"pilihan +,-,/,*:";
+	cin >> matematika;
+	cout<<"Masukkan nilai ";
+	cin >> b;
+	
+	cout<<"\n Hasil :";
+	cout<< a << matematika << b;
+	
+	if(matematika== '+')
+	{hasil= a+b;}
+	
+	else if(matematika== '-')
+	{hasil= a-b;}
+	
+	else if(matematika== '/')
+	{hasil= a/b;}
+	
+	else if(matematika== '*')
+	{hasil= a*b;}
+	else{
+	cout<<" Hasil yang salah  "<<endl;
+	}
+	cout <<"="<<hasil<<endl;
+	
+	cin.get();
+	return 0;
+	}
